@@ -1,0 +1,19 @@
+<div class="search-form">
+  <div class="input-group">
+    <span class="input-group-prepend">
+      <span class="input-group-text">
+        Search
+      </span>
+    </span>
+    <input type="text" class="form-control" placeholder="Search Users" [(ngModel)]="searchValue" (keyup)="onChange()">
+  </div>
+  <div class="showing-users">
+    <label for="showUsers">
+      <span class="checkbox-container">
+        <input type="checkbox" name="showUsers" id="showUsers" (change)="onChange()" [(ngModel)]="isShowInactive">
+        <span class="checkbox"></span>
+      </span>
+      Show Inactive Users
+    </label>
+  </div>
+</div>

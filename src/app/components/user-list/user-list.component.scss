@@ -1,0 +1,40 @@
+#user-list {
+  padding: 10px;
+  margin-top: 20px;
+
+  .user-list-table {
+    ul {
+      margin-top: 20px;
+      border: 1px solid #dddddd;
+      li {
+        display: flex;
+        padding: 10px 15px;
+        background-color: #ffffff;
+        &:not(:last-child) {
+          border-bottom: 1px solid #dddddd;
+        }
+        &:hover {
+          background-color: #eeeeee;
+        }
+
+        .userstatus {
+          display: inline-block;
+          padding: 5px 15px;
+          border-radius: 20px;
+          background-color: #dddddd;
+          color: black;
+          text-transform: uppercase;
+          font-size: 12px;
+          width: 100px;
+          height: auto;
+          text-align: center;
+          &.status-active {
+            color: #ffffff;
+            background-color: #42a13a;
+          }
+        }
+      }
+    }
+  }
+
+}

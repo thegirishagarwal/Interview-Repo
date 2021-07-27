@@ -1,0 +1,42 @@
+
+  .showing-users {
+    margin: 15px 0;
+    label {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      input[type="checkbox"] {
+        display: none;
+      }
+      .checkbox {
+        width: 40px;
+        height: 16px;
+        border-radius: 20px;
+        background-color: #bbbbbb;
+        position: relative;
+        display: inline-block;
+        &:before {
+          content: '';
+          position: absolute;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          background-color: #dddddd;
+          box-shadow: 0 0 5px rgba(0,0,0,0.5);
+          top: 0;
+          bottom: 0;
+          margin: auto 0;
+          left: -2px;
+          transition: all 0.3s;
+        }
+      }
+
+      input[type="checkbox"]:checked + .checkbox {
+        background-color: #42a13a;
+        &:before {
+          left: 22px;
+        }
+      }
+    }
+  }
